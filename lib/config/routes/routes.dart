@@ -5,7 +5,7 @@ import 'package:buddy_app/ui/view/main_page.dart';
 import 'package:buddy_app/ui/view/splash_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
+import 'package:buddy_app/ui/view/notification.dart';
 
 class Routes {
   Route<dynamic> onGenerateRoute(RouteSettings settings) {
@@ -22,6 +22,9 @@ class Routes {
       case doPage:
         return MaterialPageRoute(builder: (_) => DoPage());
         break;
+        case notification:
+      return MaterialPageRoute(builder: (_) => MessageHandler());
+      break;
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(
